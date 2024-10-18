@@ -11,16 +11,21 @@ def productOf(x, y):
     return x * y
 
 def main():
-    num1 = 2
-    num2 = 6
-    num3 = 7.8
-    num4 = 3.7
-    print(sumOf(num3, num4))
-    print("type: float")
-    print(diffOf(num2, num1))
-    print("type: int")
-    print(productOf(num3, num1))
-    print("type: float")
+    num1 = 7.8
+    num2 = 3.7
+    num3 = 2
+    num4 = 6
+
+    x = sumOf(num1, num2)
+    y = diffOf(num3, num4)
+    z = productOf(num1, num3)
+
+    print(x)
+    print("type: " + str(type(x)))
+    print(y)
+    print("type: " + str(type(y)))
+    print(z)
+    print("type: " + str(type(z)))
 
 if __name__ == '__main__':
     main()
